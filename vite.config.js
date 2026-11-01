@@ -46,7 +46,8 @@ export default defineConfig(() => {
 
             if (
               requestUrl.pathname !== '/api/token' &&
-              requestUrl.pathname !== '/api/knowledge'
+              requestUrl.pathname !== '/api/knowledge' &&
+              requestUrl.pathname !== '/api/profile'
             ) {
               return next()
             }
@@ -77,6 +78,23 @@ export default defineConfig(() => {
                 !allowedOrigins.includes(req.headers.origin))
             ) {
               return reply(403, { error: 'この画面からは利用できません。' })
+            }
+
+            if (requestUrl.pathname === '/api/profile') {
+              try {
+                const file = new URL('../character-profile.txt', import.meta.url)
+                const profile = readFileSync(file, 'utf8').trim()
+
+                if (!profile) {
+                  throw new Error('プロフィールが空です。')
+                }
+
+                return reply(200, { profile })
+              } catch {
+                return reply(500, {
+                  error: 'character-profile.txtを読み込めませんでした。',
+                })
+              }
             }
 
             if (requestUrl.pathname === '/api/knowledge') {
