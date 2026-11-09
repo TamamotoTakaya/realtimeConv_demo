@@ -229,7 +229,7 @@ git --version
 ```
 
 <!-- 撮影：VS Codeの上部メニューと、下部ターミナルでの実行結果。 -->
-![VS Codeの下部ターミナルでNode.js、npm、Gitを確認した画面](images/install/vscode-terminal.png)
+![VS Codeの下部ターミナルでNode.js、npm、Gitを確認した画面](screenshots/スクリーンショット%202026-11-09%20184802.png)
 
 3つともバージョン番号が出たら、[READMEの「GitHubからクローンする」](../README.md#2-githubからクローンする)に進んでください。
 
