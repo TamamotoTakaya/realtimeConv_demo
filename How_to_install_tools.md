@@ -201,12 +201,12 @@ Gitは、GitHubにあるアプリのファイルを、自分のPCへ取得する
 
 「Git Credential Manager」を選択
 
-![git credential helper](screenshots/スクリーンショット%202026-11-09%20140817.png)
+![git credential helper](screenshots/スクリーンショット%202026-11-09%20140758.png)
 
 
 両方ともチェックをつけて、「install」
 
-![git extra options](screenshots/スクリーンショット%202026-11-09%20140905.png)
+![git extra options](screenshots/スクリーンショット%202026-11-09%20140817.png)
 
 
 
