@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 
 export default defineConfig(() => {
   const projectDir = fileURLToPath(new URL('.', import.meta.url))
-  const keyFile = new URL('../test-api-key.txt', import.meta.url)
+  const keyFile = new URL('../students_key.txt', import.meta.url)
 
   let apiKey
 
