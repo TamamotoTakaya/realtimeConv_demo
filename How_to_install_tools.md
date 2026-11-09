@@ -15,7 +15,7 @@ git --version
 ```
 
 <!-- 撮影：PowerShellで3つのコマンドとバージョン番号が見える画面。ユーザー名が映る場合は隠す。 -->
-![PowerShellでNode.js、npm、Gitのバージョンを確認した画面](images/install/version-check.png)
+![PowerShellでNode.js、npm、Gitのバージョンを確認した画面](screenshots/スクリーンショット%202026-11-09%20135136.png)
 
 | 確認結果 | 次にすること |
 |---|---|
@@ -32,26 +32,91 @@ VS Codeは、アプリの設定やコードを編集するためのソフトで�
 
 1. [VS Codeの公式ダウンロードページ](https://code.visualstudio.com/download)を開きます。
 2. Windowsの **User Installer** から、PCに合った `x64` または `Arm64` を選びます。
+3. ダウンロードした `.exe` を開き、画面に沿ってインストールします。
 
 <!-- 撮影：Windowsの「User Installer」とx64／Arm64が見える範囲。 -->
-![VS CodeのダウンロードページでWindows用のUser Installerを選ぶ画面](images/install/vscode-download.png)
+基本的に赤丸で囲んだ部分をクリックしてインストーラーをダウンロードすればOK
+![VS CodeのダウンロードページでWindows用のUser Installerを選ぶ画面](screenshots/スクリーンショット%202026-11-09%20133401.png)
 
-3. ダウンロードした `.exe` を開き、画面に沿ってインストールします。
+
+
+利用規約を最後までスクロールして「同意する」にチェックしてから「次へ」
+
+![vs code 利用規約](screenshots/スクリーンショット%202026-11-09%20134122.png)
+
+
+こだわりがなければ、そのまま「次へ」
+
+![vs codeインストール場所](screenshots/スクリーンショット%202026-11-09%20134149.png)
+
+
+そのまま「次へ」
+
+![vs code スタートメニュー](screenshots/スクリーンショット%202026-11-09%20134215.png)
+
+
+図の通りチェックを入れて「次へ」
+
+![vs code 追加タスク](screenshots/スクリーンショット%202026-11-09%20134250.png)
+
+
+「Don't add the copilot command」にチェック。利用料金がかかるが、興味がある人は後から導入してみてください。
+
+![GitHub Copilot CLI](screenshots/スクリーンショット%202026-11-09%20134425.png)
+
+
+設定を再度確認して「インストール」
+
+![vs code installation option check](screenshots/スクリーンショット%202026-11-09%20134447.png)
+
+
 4. スタートメニューから **Visual Studio Code** を開きます。
 
 日本語表示にしたい場合は、左側の **拡張機能（Extensions）** から `Japanese Language Pack for Visual Studio Code` を検索し、Microsoftの拡張機能を入れます。英語表示のままでも実習は進められます。
+
+
+参考
+
+[WindowsへのVisual Studio Codeのインストール方法（龍谷大学）](https://www602.math.ryukoku.ac.jp/Prog1/vscode-win.html)
 
 ## 3. Node.jsとnpmを入れる
 
 Node.jsはアプリを動かすための環境です。npmは、アプリに必要なライブラリをまとめて入れる道具で、通常はNode.jsと一緒に入ります。
 
 1. [Node.jsの公式ダウンロードページ](https://nodejs.org/en/download)を開きます。
-2. READMEで指定された **Node.jsのバージョン** を選びます。Windows向けの **Installer（`.msi`）** を、PCに合った種類でダウンロードしてください。
+2. **v24.○○.○○のLTS**を選びます。Windows向けの **Installer（`.msi`）** を、PCに合った種類でダウンロードしてください。
 
 <!-- 撮影：検証に使ったバージョン、Windows、x64／Arm64、Installer (.msi) が見える画面。 -->
-![Node.jsのダウンロードページでWindows用のインストーラーを選ぶ画面](images/install/node-download.png)
+適切なバージョン・OSを選んでください。
+
+![Node.jsのダウンロードページでWindows用のインストーラーを選ぶ画面](screenshots/スクリーンショット%202026-11-09%20133925.png)
 
 3. ダウンロードした `.msi` を開き、標準設定で進めます。追加の開発ツールを入れる選択肢が表示された場合、今回のアプリでは不要です。
+
+利用規約を下までスクロールして、「I accept ...」にチェック後、「Next」
+
+![node js 利用規約](screenshots/スクリーンショット%202026-11-09%20135742.png)
+
+
+特にこだわりがなければ「Next」
+
+![node js インストール場所](screenshots/スクリーンショット%202026-11-09%20135754.png)
+
+
+そのまま「Next」
+
+![node js custom setup](screenshots/スクリーンショット%202026-11-09%20135848.png)
+
+
+「Automatically install ...」にチェックを入れて「Next」
+
+![node js tools for native modules](screenshots/スクリーンショット%202026-11-09%20135905.png)
+
+
+「install」を押す。「このアプリがデバイスに変更を加えることを許可しますか？」が出てきたら「はい」を押す。
+
+![node js installation last check](screenshots/スクリーンショット%202026-11-09%20135918.png)
+
 4. インストール後、PowerShellとVS Codeをいったん終了します。PowerShellを開き直し、以下を実行します。
 
 ```powershell
@@ -69,12 +134,80 @@ Gitは、GitHubにあるアプリのファイルを、自分のPCへ取得する
 2. **Standalone Installer** の `x64 Setup` または `ARM64 Setup` を選びます。
 
 <!-- 撮影：「Standalone Installer」の2つのダウンロードリンクが見える画面。 -->
-![Git for Windowsのインストーラーを選ぶ画面](images/install/git-download.png)
+![Git for Windowsのインストーラーを選ぶ画面](screenshots/スクリーンショット%202026-11-09%20134718.png)
 
 3. ダウンロードした `.exe` を開き、標準設定で進めます。Gitを使える場所を選ぶ画面が出たら、**Git Bash以外のターミナルでもGitを使える選択肢**を選んでください。
 
 <!-- 撮影：Gitを使える場所を選ぶ画面。選択する項目が見えるように撮る。 -->
-![PowerShellなどのターミナルでもGitを使える設定を選ぶ画面](images/install/git-path.png)
+最期までスクロールしたら、「Next」
+
+![git 利用規約](screenshots/スクリーンショット%202026-11-09%20140238.png)
+
+
+こだわりがなければ、そのまま「Next」
+
+![git インストール場所](screenshots/スクリーンショット%202026-11-09%20140252.png)
+
+
+図の通りチェック（おそらくデフォルトのまま）して、「Next」
+
+![git select components](screenshots/スクリーンショット%202026-11-09%20140325.png)
+
+
+そのままで「Next」
+
+![git start menu](screenshots/スクリーンショット%202026-11-09%20140349.png)
+
+
+使用するテキストエディタを選択する（今回はVS Codeを推奨）
+
+![git text editor](screenshots/スクリーンショット%202026-11-09%20140417.png)
+
+
+「Override the default ...」を選択
+
+![git branch](screenshots/スクリーンショット%202026-11-09%20140457.png)
+
+
+「Git from the command line ...」を選択
+
+![git path environment](screenshots/スクリーンショット%202026-11-09%20140521.png)
+
+
+「Use bundled OpenSSH」を選択
+
+![git ssh](screenshots/スクリーンショット%202026-11-09%20140543.png)
+
+
+「Use the OpenSSL Library」を選択
+
+![git https transport backend](screenshots/スクリーンショット%202026-11-09%20140628.png)
+
+
+「Check out Windows-style, ...」を選択
+
+![git line ending](screenshots/スクリーンショット%202026-11-09%20140649.png)
+
+
+「Use MinTTY ...」を選択
+
+![git bash](screenshots/スクリーンショット%202026-11-09%20140707.png)
+
+
+「Merge」を選択
+
+![git pull option](screenshots/スクリーンショット%202026-11-09%20140741.png)
+
+
+「Git Credential Manager」を選択
+
+![git credential helper](screenshots/スクリーンショット%202026-11-09%20140817.png)
+
+
+両方ともチェックをつけて、「install」
+![git extra options](screenshots/スクリーンショット%202026-11-09%20140905.png)
+
+
 
 4. PowerShellとVS Codeをいったん終了します。PowerShellを開き直し、以下を実行します。
 
