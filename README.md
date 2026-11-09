@@ -133,7 +133,7 @@ npm.cmd run dev
 VS Codeで `voice-agent-workshop` を開き、新しいターミナルで次を実行します。
 
 ```powershell
-cd voice-agent
+cd realtimeConv_demo
 npm.cmd run dev
 ```
 
@@ -142,7 +142,7 @@ npm.cmd run dev
 | 症状 | 確認すること |
 |---|---|
 | `npm.cmd` が認識されない | Node.jsを入れた後、VS Codeを開き直したか |
-| `package.json` が見つからない | ターミナルで `cd voice-agent` を実行したか |
+| `package.json` が見つからない | ターミナルで `cd realtimeConv_demo` を実行したか |
 | ブラウザでページが開かない | サーバーが動いているか。`Local:` に表示されたURLを開いているか |
 | APIキーファイルが見つからない | `voice-agent` の外側に置いたか。ファイル名と拡張子が合っているか |
 | 接続したが音声が聞こえない | ブラウザのマイク許可、PCの音量、イヤホンなどの出力先を確認 |
