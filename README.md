@@ -6,8 +6,8 @@
 
 ## 1. 必要なものを確認する
 
-- **VS Codeなどのエディタ**：設定やコードを編集します。[VS Codeのダウンロード](https://code.visualstudio.com/)
-- **Node.jsとnpm**：アプリの起動と、必要なライブラリの導入に使います。[Node.jsのダウンロード](https://nodejs.org/en/download/)
+- **VS Codeなどのエディタ**：設定やコードを編集します。VS Code以外のテキストエディタが既にインストールされているなら、インストール不要です。[VS Codeのダウンロード](https://code.visualstudio.com/)
+- **Node.jsとnpm**：アプリの起動と、必要なライブラリの導入に使います。バージョンはv24.13.0を推奨します。[Node.jsのダウンロード](https://nodejs.org/en/download/)
 - **Git**：GitHubからアプリのファイルを取得します。[Gitのダウンロード](https://git-scm.com/downloads)
 - **Chromeなどのブラウザ**、**インターネット接続**、**音声を聞ける環境**。声で話す場合はマイクも使います。
 - **OpenAI APIキー**：研究用プロジェクトでRealtime APIを使えるキーが必要です。入手方法が分からない場合は担当者に確認してください。
@@ -21,6 +21,9 @@ git --version
 ```
 
 それぞれバージョン番号が出れば、インストール済みです。「認識されません」などと表示されたものだけインストールしてください。Node.jsを新しく入れる場合は、公式ページの **LTS（長期サポート版）** を選びます。npmは通常、Node.jsと一緒に入ります。インストール後はVS Codeを開き直して、もう一度確認してください。
+
+詳細は下記からご確認ください。
+[各ツールのインストール方法](How_to_install_tools.md)
 
 ## 2. GitHubからクローンする
 
