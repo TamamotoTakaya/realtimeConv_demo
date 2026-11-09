@@ -40,7 +40,7 @@ git clone https://github.com/TamamotoTakaya/realtimeConv_demo.git realtimeConv_d
 
 ## 3. APIキーを配置する
 
-`voice-agent-workshop` の直下、**`voice-agent` フォルダの外側**に、`openai-api-key.txt` を作ります。中身はAPIキーだけを1行で記入します。
+`voice-agent-workshop` の直下、**`realtimeConv_demo` フォルダの外側**に、`openai-api-key.txt` を作ります。中身はAPIキーだけを1行で記入します。
 
 | `voice-agent-workshop` の直下にあるもの | 用途 |
 |---|---|
