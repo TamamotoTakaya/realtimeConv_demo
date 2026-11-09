@@ -31,7 +31,7 @@ git --version
 VS Codeの **「ファイル」→「フォルダーを開く」** で、アプリを置きたい場所を開きます。そこで新しいターミナルを開いて、以下を実行します。1行目のURLは、案内されたリポジトリのURLに置き換えてください。
 
 ```powershell
-git clone https://github.com/TamamotoTakaya/Komachi_realtimeConv_demo.git
+git clone https://github.com/TamamotoTakaya/realtimeConv_demo.git realtimeConv_demo
 ```
 
 非公開リポジトリの場合は、招待を承認し、アクセス権のあるGitHubアカウントで認証してください。
@@ -106,7 +106,7 @@ git clone https://github.com/TamamotoTakaya/Komachi_realtimeConv_demo.git
 
 ## 4. アプリを起動する
 
-`voice-agent-workshop` を開いたVS Codeで、新しいターミナルを開き、以下を順に実行します。
+`realtimeConv_demo` を開いたVS Codeで、新しいターミナルを開き、以下を順に実行します。
 
 ```powershell
 cd voice-agent
@@ -130,7 +130,7 @@ npm.cmd run dev
 
 ## 次回起動するとき
 
-VS Codeで `voice-agent-workshop` を開き、新しいターミナルで次を実行します。
+VS Codeで `realtimeConv_demo` を開き、新しいターミナルで次を実行します。
 
 ```powershell
 cd realtimeConv_demo
